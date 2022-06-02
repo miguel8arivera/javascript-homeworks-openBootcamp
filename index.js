@@ -45,3 +45,32 @@ while (true) {
     break;
   }
 }
+
+//? Cuarto Trabajo
+
+let name = "Miguel";
+let surname = "Ochoa";
+
+let student = `${name} ${surname}`;
+
+let studentUpper = student.toUpperCase();
+
+let studentLower = student.toLowerCase();
+
+let space = student.length;
+
+let firstLetter = name.charAt(0);
+
+console.log(firstLetter);
+
+let lastLetter = surname.charAt(surname.length - 1);
+
+console.log(lastLetter);
+
+let whitoutSpace = student.trim();
+
+console.log(whitoutSpace);
+
+let bol = student.includes("Miguel");
+
+console.log(bol);
