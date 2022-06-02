@@ -18,3 +18,30 @@ const libro = {
 };
 
 console.log(libro);
+
+//? Tercer Trabajo
+
+// for
+
+for (let i = 10; i > 0; i--) {
+  console.log(i);
+}
+
+//while
+
+let i = 10;
+while (i > 0) {
+  console.log(i);
+  i--;
+}
+
+// while con una bifurcación if y una sentencia break
+
+start = 10;
+while (true) {
+  console.log(start);
+  start--;
+  if (start === 0) {
+    break;
+  }
+}
