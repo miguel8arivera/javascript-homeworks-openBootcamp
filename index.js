@@ -74,3 +74,21 @@ console.log(whitoutSpace);
 let bol = student.includes("Miguel");
 
 console.log(bol);
+
+//? Quinto Trabajo
+
+let altura = 170;
+
+let alturafloat = 1.7;
+
+let peso = 70.31;
+
+alturaRend = Math.round(alturafloat);
+
+pesoRedondeado = Math.floor(70.31);
+
+let palabra = "el máximo valor que se puede obtener en Javascript + 1";
+
+let resultado = palabra.replace("el", "al");
+
+let final = resultado.split("+ 1").join("");
