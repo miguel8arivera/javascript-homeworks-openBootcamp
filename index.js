@@ -154,3 +154,39 @@ const nameFamily = new Set(["Elizabeth", "Miguel", "Benjamin", "Scharly"]);
 
 // - Modifica el Set original añadiendo el nombre "Javascript" (ya que empieza a formar parte de tu vida ;)
 nameFamily.add("Javascript");
+
+//? Octavo Trabajo
+
+// - Un objeto con tus datos personales (nombre, apellido, edad, altura, eresDesarrollador)
+
+const data = {
+  name: "Miguel",
+  surname: "Ochoa",
+  age: 27,
+  height: 1.7,
+  isDeveloper: true,
+};
+
+// - Una variable que obtenga tu edad a partir del objeto anterior.
+const age = data.age;
+
+// - Una lista que contenga el objeto con tus datos personales y un nuevo objeto con los datos personales de tus dos mejores amig@s.
+
+const friends = [
+  {
+    name: "Aldair",
+    surname: "Ochoa",
+    age: 24,
+    isDeveloper: false,
+  },
+  {
+    name: "Aldair",
+    surname: "Ochoa",
+    age: 24,
+    isDeveloper: false,
+  },
+];
+
+const newData = [...data, ...friends];
+
+// - Una nueva lista con los objetos de la lista anterior ordenados por edad, de mayor a menor
