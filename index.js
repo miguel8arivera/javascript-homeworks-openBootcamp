@@ -136,3 +136,21 @@ const director1 = movies.map((movie) => movie.director);
 const title1 = movies.map((movie) => movie.title);
 
 const spred = [...director1, ...title1];
+
+//? septimo Trabajo
+
+// - Un nuevo Set con los nombres de tu familia
+
+const family = [{ wife: "Elizabeth", son: "Ignacio", father: "Miguel" }];
+
+const mySet = new Set(family);
+
+// - Modifica el Set original añadiendo tu nombre (duplicado) (debería darte lo mismo)
+
+mySet.add("Miguel");
+
+// - Modifica el Set original añadiendo tu nombre (duplicado) (debería darte lo mismo)
+const nameFamily = new Set(["Elizabeth", "Miguel", "Benjamin", "Scharly"]);
+
+// - Modifica el Set original añadiendo el nombre "Javascript" (ya que empieza a formar parte de tu vida ;)
+nameFamily.add("Javascript");
