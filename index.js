@@ -218,3 +218,7 @@ let mounth = dayOfBirth.getMonth() + 1;
 // - Una variable que contenga el año de tu nacimiento (con 4 dígitos)
 
 let year = dayOfBirth.getFullYear();
+
+//? Trabajo Final
+
+let ageUser = prompt("How old are you?");
