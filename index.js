@@ -222,3 +222,33 @@ let year = dayOfBirth.getFullYear();
 //? Trabajo Final
 
 let ageUser = prompt("How old are you?");
+
+//* Onceavo Trabajo
+
+// - Una función sin parámetros que devuelva siempre "true"
+
+function returnTrue() {
+  return true;
+}
+
+returnTrue();
+// - Una función asíncrona que utilice un setTimeout y pase por consola un "Hola soy una promesa" 5 segundos después de haberse ejecutado
+
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Hola soy una promesa");
+  }, 5000);
+  reject("Error");
+});
+
+// - Una función generadora de índices pares automáticos
+
+function* indexGenerator() {
+  let index = 0;
+  while (true) {
+    yield index;
+    index += 2;
+  }
+}
+
+indexGenerator().next();
