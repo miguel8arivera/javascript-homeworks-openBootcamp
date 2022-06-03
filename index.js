@@ -172,21 +172,24 @@ const age = data.age;
 
 // - Una lista que contenga el objeto con tus datos personales y un nuevo objeto con los datos personales de tus dos mejores amig@s.
 
-const friends = [
+const dataTotal = [
+  { ...data },
   {
-    name: "Aldair",
+    name: "Benjamin",
     surname: "Ochoa",
-    age: 24,
+    age: 10,
+    height: 1.5,
     isDeveloper: false,
   },
   {
-    name: "Aldair",
-    surname: "Ochoa",
+    name: "Arthur",
+    surname: "Bavae",
     age: 24,
+    height: 1.5,
     isDeveloper: false,
   },
 ];
 
-const newData = [...data, ...friends];
-
 // - Una nueva lista con los objetos de la lista anterior ordenados por edad, de mayor a menor
+
+const ageOrder = dataTotal.sort((a, b) => a.age - b.age);
