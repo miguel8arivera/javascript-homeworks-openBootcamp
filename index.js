@@ -193,3 +193,28 @@ const dataTotal = [
 // - Una nueva lista con los objetos de la lista anterior ordenados por edad, de mayor a menor
 
 const ageOrder = dataTotal.sort((a, b) => a.age - b.age);
+
+//? Noveno Trabajo
+
+// - La fecha de hoy
+
+const today = new Date();
+
+// - La fecha de tu nacimiento
+
+const dayOfBirth = new Date(1995, 09, 28);
+
+// - Un variable que indique si hoy es más tarde (>) que la fecha de tu nacimiento
+
+let isAfter = today > dayOfBirth;
+
+// - Una variable que contenga el día de tu nacimiento
+
+let day = dayOfBirth.getDate();
+
+// - Una variable que contenga el mes de tu nacimiento (recuerda que Enero es mes 0)
+let mounth = dayOfBirth.getMonth() + 1;
+
+// - Una variable que contenga el año de tu nacimiento (con 4 dígitos)
+
+let year = dayOfBirth.getFullYear();
