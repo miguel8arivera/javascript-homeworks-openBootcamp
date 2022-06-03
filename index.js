@@ -92,3 +92,47 @@ let palabra = "el máximo valor que se puede obtener en Javascript + 1";
 let resultado = palabra.replace("el", "al");
 
 let final = resultado.split("+ 1").join("");
+
+//? Sexto Trabajo
+
+//- Una variable que contenga la lista de la compra (mínimo 5 elementos)
+const compras = ["Pan", "Pollo", "Yogurt", "Agua", "Pizza", "Vegetales"];
+
+// - Modifica la lista de la compra y añádele "Aceite de Girasol"
+compras.unshift("Aceite de Girasol");
+
+// - Vuelve a modificar la lista de la compra eliminando "Aceite de Girasol"
+compras.shift();
+
+// - Una lista de tus 3 películas favoritas (objetos con propiedades: titulo, director, fecha)
+
+const movies = [
+  { title: "Thor", director: "Russo", year: 2019 },
+  { title: "Once upon a time ", director: "Alpachino", year: 2020 },
+  { title: "Doctor Strange", director: "Rami", year: 2022 },
+  { title: "Loco de Amor", director: "Jorge Lucas", year: 2009 },
+  { title: "Una peli mas", director: "Cameron", year: 2000 },
+];
+
+// - Una nueva lista que contenga las películas posteriores al 1 de enero de 2010 (utilizando filter)
+
+const movies2010 = movies.filter((movie) => movie.year < 2010);
+
+// - Una nueva lista que contenga los directores de la lista de películas original (utilizando map)
+
+const director = movies.map((movie) => movie.director);
+
+// - Una nueva lista que contenga los títulos de la lista de películas original (utilizando map)
+
+const titleMovie = movies.map((movie) => movie.title);
+
+// - Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando concat)
+
+const union = movies.map((value) => `${value.director}- ${value.title}`);
+
+// - Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando el factor de propagación)
+
+const director1 = movies.map((movie) => movie.director);
+const title1 = movies.map((movie) => movie.title);
+
+const spred = [...director1, ...title1];
